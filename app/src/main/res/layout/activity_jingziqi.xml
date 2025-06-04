@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#f0f0f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玩家 X 回合"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/undoCountX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X 剩余悔棋: 1"
+                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/undoCountO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O 剩余悔棋: 1"
+                android:textSize="18sp"
+                android:textColor="#0000FF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 棋盘和按钮保持不变 -->
+    <com.example.jingziqi.JingziqiView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新开始"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悔棋"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#FF5722"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#607D8B"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>

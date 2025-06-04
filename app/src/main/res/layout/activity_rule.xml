@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="井字棋规则"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#333333"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 游戏使用3×3的网格棋盘"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 两位玩家轮流在空格中放置自己的标记（X或O）"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. 率先在横、竖或斜方向上连成一条直线的玩家获胜"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. 如果棋盘被填满但没有玩家连成直线，则游戏平局"
+                android:textSize="18sp"
+                android:paddingBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. 点击'重新开始'按钮可以随时重置游戏"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

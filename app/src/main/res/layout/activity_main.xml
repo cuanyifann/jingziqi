@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#f0f0f0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="井字棋"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始游戏"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="游戏规则"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="#607D8B"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出游戏"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:background="#F44336"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
